@@ -11,7 +11,57 @@
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
+    <main>
+        <header>
+            <img src="assets/img/logo.svg" alt="Logo da QuickList">
+        </header>
 
+        <section id="app">
+            <div id="logo">
+                <img src="assets/img/icons/back.svg" alt="Ícone de voltar">
+            </div>
+            <div id="appview">
+                <div>
+                    <h1>Compras da semana</h1>
+                </div>
+                <div>
+                    <div>
+                        <input type="text" name="descriptionItem" id="descriptionItem">
+                        <button type="submit" value="Adicionar item" id="btnAddItem"></button>
+                    </div>
+                    <div id="itemlist">
+                        <div id="items">
+                            <input type="checkbox" name="paodeforma" id="paodeforma">
+                            <label for="paodeforma">Pão de forma</label>
+
+                            <img src="assets/img/icons/remove.svg" alt="Deletar">
+                        </div>
+
+                        <div id="items">
+                            <input type="checkbox" name="cafepreto" id="cafepreto">
+                            <label for="cafepreto">Café preto</label>        
+                            
+                            <img src="assets/img/icons/remove.svg" alt="Deletar">
+                        </div>
+
+                        <div id="items">
+                            <input type="checkbox" name="sucodelaranja" id="sucodelaranja">
+                            <label for="sucodelaranja">Suco de laranja</label>     
+                            
+                            <img src="assets/img/icons/remove.svg" alt="Deletar">
+                        </div>
+
+                        <div id="items">
+                            <input type="checkbox" name="bolacha" id="bolacha">
+                            <label for="bolacha">Bolacha</label>
+                            
+                            <img src="assets/img/icons/remove.svg" alt="Deletar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>
