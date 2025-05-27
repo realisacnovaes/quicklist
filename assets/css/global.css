@@ -1,0 +1,31 @@
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #FFFFFF;
+
+    --border-primary: #D1D5DB;
+    --border-hover: #B0C2D0;
+
+    --ff-inter: "Inter", sans-serif;
+}
+
+H1 {font: 700 1.5rem/2rem var(--ff-inter)}
+label {font: 600 1rem/1.25rem var(--ff-inter)}
+p {font: 500 1rem/1.25rem var(--ff-inter)}
+a {font: 500 .875rem/1rem var(--ff-inter)}
