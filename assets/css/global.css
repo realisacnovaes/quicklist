@@ -40,6 +40,30 @@ main {
     margin-inline: auto;
 }
 
+.alert{
+    width: 100%;
+
+    padding: .75rem;
+
+    background-color: var(--color-danger);
+    color: var(--always-white);
+
+    border-radius: 8px;
+
+    & img {
+        vertical-align: middle;        
+    }
+
+    & img:nth-child(3){
+        float: right;
+        cursor: pointer;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
 @media (width >= 80em){
     main {
         --max-width: 80em;
