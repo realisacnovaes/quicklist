@@ -27,41 +27,22 @@
                 <div>
                     <form >
                         <input type="text" name="descriptionItem" id="descriptionItem" placeholder="Adicione um novo item">
-                        <button type="submit" value="Adicionaritem" id="btnAddItem">Adicionar Item</button>
+                        <button type="submit" value="Adicionaritem" id="btnAddItem" onclick="addItem()">Adicionar Item</button>
                     </form>
                     <div id="itemlist">
-                        <div id="items-1" class="items">
-                            <input type="checkbox" name="paodeforma" id="paodeforma">
-                            <label for="paodeforma">Pão de forma</label>
+                        <!-- 
+                            <div id="items-1" class="items">
+                                <input type="checkbox" name="paodeforma" id="paodeforma">
+                                <label for="paodeforma">Pão de forma</label>
 
-                            <img src="assets/img/icons/remove.svg" alt="Deletar">
-                        </div>
-
-                        <div id="items-2" class="items">
-                            <input type="checkbox" name="cafepreto" id="cafepreto">
-                            <label for="cafepreto">Café preto</label>        
-                            
-                            <img src="assets/img/icons/remove.svg" alt="Deletar">
-                        </div>
-
-                        <div id="items-3" class="items">
-                            <input type="checkbox" name="sucodelaranja" id="sucodelaranja">
-                            <label for="sucodelaranja">Suco de laranja</label>     
-                            
-                            <img src="assets/img/icons/remove.svg" alt="Deletar">
-                        </div>
-
-                        <div id="items-4" class="items">
-                            <input type="checkbox" name="bolacha" id="bolacha">
-                            <label for="bolacha">Bolacha</label>
-                            
-                            <img src="assets/img/icons/remove.svg" alt="Deletar">
-                        </div>
+                                <img src="assets/img/icons/remove.svg" alt="Deletar">
+                            </div>
+                        -->
                     </div>
                     <div class="alert hidden" id="alert">
                         <img src="assets/img/icons/warning-circle-filled.svg" alt="ícone de Aviso">
-                        <label>O item foi removido da lista</label>
-                        <img src="assets/img/icons/delete-small.svg" alt="ícone de x">
+                        <label id="alertMessage">O item foi removido da lista</label>
+                        <img src="assets/img/icons/delete-small.svg" alt="ícone de x" onclick="document.getElementById('alert').classList.add('hidden')">
                     </div>
                 </div>
             </div>
